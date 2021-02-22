@@ -1,69 +1,78 @@
+/*GRID LAYOUT*/
 body, html {
-    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/*GRID LAYOUT*/
+
 .gridLayout {
     Background-color: white;
     Display: grid;
-    grid-template-columns: 2fr 3fr;
-    grid-template-areas: 
-    "header header"
-    "profile about";
-    row-gap: 50px;
-    padding-left: 0;
-    padding-right: 0;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:
+    "header header" 
+    "profileIMG about"
+    "footer footer";
+    grid-gap: 50;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 @media (max-width: 980px) {
     .gridLayout { 
-        grid-template-columns: repeat(1, 1fr);
-        row-gap: 25px;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
         grid-template-areas: 
         "header"
-        "profile"
-        "about";
-        text-align: center;
+        "profileIMG"
+        "about"
+        "footer";
+        position: absolute;
+        padding: 0;
      }
 }
-/*header*/
 
+/*header*/
 .aboutNav {
     border-bottom: 2px solid #F5DF4D;;
     padding-bottom: 3px;
 }
 
-.profile {
-    margin-left: 15%;
-    grid-area: profile;
+.profileIMG {
+    grid-area: profileIMG;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgreen;
+    padding-left: 20%;
 }
 
-.profile img {
+.profileIMG img {
     max-height: calc(200px + 25vw);
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 @media (max-width: 980px) {
-    .profile {
-        margin: 0;
+    .profileIMG {
+        padding: 0;
+        padding-top: 2vh;
     }
+
     .about {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        padding: 0;
+    }
+
+    .footer {
+        position: absolute;
     }
 }
 
 .about {
     grid-area: about;
-    margin-right: 15%;
-    
+    position: relative;
+    padding-right: 20%;
+    padding-left: 50px;
 }
 
 .about img {
@@ -93,4 +102,10 @@ color: #939597;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     margin-left: -30px;
+}
+
+.footer {
+    height: 100%;
+    width: 100%;
+    position: relative;
 }

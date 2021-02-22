@@ -1,7 +1,13 @@
 * {
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100%;
+    width: 100%;
     margin:0;
     padding: 0;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,10 +15,7 @@ body {
     margin: 0;
     font-size: calc(15px + 0.2vw);
     background-color: white;
-}
-
-body, html {
-    min-height: 100%;
+    position: relative;
 }
 
 /*Text*/
@@ -45,7 +48,7 @@ h3 {
     Display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
+    grid-gap: 40px;
     grid-template-areas: 
     "header header header"
     "approach approach approach"
@@ -59,7 +62,7 @@ h3 {
 @media (max-width: 980px) {
     .gridLayout {
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 30px;
+        grid-gap: 20px;
         grid-template-areas: 
         "header header"
         "approach approach"
@@ -128,7 +131,7 @@ h3 {
 
   ul { 
     float: right;
-    padding-top: 1em;
+    padding-top: 5px;
     padding-right: 5%; 
     list-style: none; 
     display: table;
@@ -198,12 +201,13 @@ a {
 .slice {
     padding: 1.2rem 2.5rem;
     border: 2px solid #F5DF4D;
+    text-decoration: none;
     color: white;
     border-radius: 0rem;
     letter-spacing: 0.3rem;
     position: relative;
     -webkit-transition: all 100ms cubic-bezier(0.890,0,0.014,1);/*older webkit*/
-    -webkit-transition: all 100ms cubic-bezier(0.890,-, 0.170,0.140, 1.225);
+    -webkit-transition: all 100ms cubic-bezier(0.890, 0, 0.170,0.140, 1.225);
     -moz-transition: all 100ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
     -o-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
     transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
@@ -217,6 +221,8 @@ a {
 .slice .top {
     position: relative;
     height: 6px;
+    text-decoration: none;
+    color: white;
     overflow: hidden;
     top: 0;
     -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
@@ -240,8 +246,10 @@ a {
  
 .slice .bottom {
     position: relative;
+    color: white;
     height: 6px;
     overflow: hidden;
+    text-decoration: none;
     bottom: 0;
     -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
     -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
@@ -265,7 +273,9 @@ a {
 .slice .bottom span {
     top: -6px;
     position: absolute;
+    text-decoration: none;
     left: 0;
+    color: white;
   }
 
 .slice:hover .top {
@@ -275,6 +285,7 @@ a {
     -ms-transition-delay: 0.35s;     
     -o-transition-delay: 0.35s;     
     transition-delay: 0.35s; 
+    color: white;
 }
 
 .slice:hover .bottom {
@@ -284,18 +295,22 @@ a {
     -ms-transition-delay: 0.35s;     
     -o-transition-delay: 0.35s;     
     transition-delay: 0.35s; 
+    color: white;
 }
-.slice:hover, .btn-slice:focus, .btn-slice:active {
-	margin-left: 10px;
+.slice:hover, .slice:focus, .slice:active {
+    margin-left: 10px;
+    color: white;
 }
-.slice:before{
+
+.slice:before {
 	content: '';
 	height: 1px;
 	width: 60px;
 	background-color: #F5DF4D;
 	position: absolute;
 	margin-top: 6px;
-	right: -35px;
+    right: -35px;
+    color: white;
   
   -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
   -webkit-transition: all 1000ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
@@ -310,7 +325,8 @@ a {
   transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
 }
 .slice:hover:before{
-	width: 130%;
+    width: 130%;
+    color: white;
 }
 
 /* MY APPROACH */
@@ -326,13 +342,8 @@ a {
 }
 
 /* MY WORK */
-.work {
+#work {
     grid-area: work;
-    padding-top: 20px;
-}
-
-.work h3 {
-    text-transform: uppercase;
     color: #939597;
 }
 
@@ -340,22 +351,22 @@ a {
     color: black;
     margin-top: 0;
     padding: 0;
-
+    line-height: 0;
 }
 
 #blmIMG {
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blm {
     width: 100%;
     overflow: hidden;
     position: relative;
-    margin-top: 20px;
     border-radius: 10px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 
 .blm img {
@@ -371,10 +382,10 @@ a {
     transform: scale(1.1);
 }
 
-.work p {
+#work p {
     color: #939597;
+    line-height: 0%;
 }
-
 
 /* ABOUT ME */
 .profile {
@@ -433,14 +444,12 @@ a {
 
 /*footer*/
 
-footer
-{
+footer {
     grid-area: footer;
-    display: flex;
-    position: relative;
-    min-height: 100%;
+    box-sizing: border-box;
+    height: 150px;
     width: 100%;
-    padding: 0 0 150px;
+    position: relative;
 }
 
 .row {
@@ -453,22 +462,25 @@ footer
     color: white;
     bottom: 0;
     left: 0;
+   
   }
 
 .contact {
     position: absolute;
     margin-left: 5%;
-    padding-top: 20px;
-    line-height: 40px;
+    margin-top: 35px;
+    line-height: 30px;
 } 
 
 .contact p {
     color: #A5A5A5;
+    line-height: 5px;
 }
 
 .copyright {
     font-size: 0.75em;
     padding-top: 10px;
+    
 }
 
 .linkedIn {
@@ -492,29 +504,29 @@ footer
 }
 
 @media (max-width: 980px) {
-    .footer {
-        position: relative;
-        top: -20000;
-        bottom: 0;
-        width: 100%;
-        height: 250px;
-    }
     .row {
-       background-color: #2C2C2C;
-       margin-top: 20px;
+       height: 250px;
        width: 100%;
+       margin-top: 100px;
+       position: relative;
+       bottom: 0;
+       left: 0;
+    }
+
+    .row ul {
+        padding: 0;
     }
 
     .contact {
         position: relative;
-        top: -15px;
         text-align: center;
+        align-content: center;
+        justify-content: center;
         line-height: 30px;
-        margin-top: 20px;
+        bottom: 0;
     }
     .copyright {
         position: relative;
-        margin-top: 25px;
         padding: 0;
     }
   }
