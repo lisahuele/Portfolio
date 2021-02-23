@@ -442,14 +442,14 @@ a {
     }
 }
 
-/*footer*/
-
+/*------------------------------- FOOTER -------------------------------*/
 footer {
     grid-area: footer;
     box-sizing: border-box;
     height: 150px;
     width: 100%;
     position: relative;
+    background-color: #2C2C2C;
 }
 
 .row {
@@ -462,7 +462,7 @@ footer {
     color: white;
     bottom: 0;
     left: 0;
-   
+    justify-content: center;
   }
 
 .contact {
@@ -474,7 +474,7 @@ footer {
 
 .contact p {
     color: #A5A5A5;
-    line-height: 5px;
+    line-height: 10px;
 }
 
 .copyright {
@@ -485,6 +485,8 @@ footer {
 
 .linkedIn {
     border-radius: 10px;
+    margin-top: -37px
+    
 }
 
 .linkedIn:hover {
@@ -523,7 +525,7 @@ footer {
         align-content: center;
         justify-content: center;
         line-height: 30px;
-        bottom: 0;
+        bottom: 10px;
     }
     .copyright {
         position: relative;

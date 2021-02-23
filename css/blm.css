@@ -1,0 +1,177 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 30px;
+}
+
+.h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: none;
+    white-space: nowrap;
+    line-height: 30px;
+}
+
+h2 {
+    text-transform: none;
+    font-size: calc(20px + 0.3vw);
+    margin-bottom: -10px;
+}
+
+.work {
+    border-bottom: 2px solid #F5DF4D;;
+    padding-bottom: 3px;
+}
+
+/*--------------------------- GRID LAYOUT -------------------------*/
+.gridLayout2 {
+    Display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "heroTextBox heroImageContainer heroImageContainer heroImageContainer"
+    "challenge challenge goal goal"
+    "footer footer footer footer";
+}
+
+/*------------------------------- HEADER -------------------------------*/
+
+.heroContainer {
+    width: 100%;
+    height: calc(395px + 25vw);
+    background-color: #F0EEE9;
+}
+
+.heroTextBox {
+    grid-area: heroTextBox;
+    margin-top: 20%;
+    padding-left: 15%;
+    width: 40vw;
+    height: fit-content;
+}
+
+.heroImageContainer {
+    grid-area: heroImageContainer;
+    margin-left: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.heroImageChild {
+    overflow-x: scroll;
+    border-radius: 20px 20px 0 0px;
+    height: calc(300px + 20vw);
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    box-shadow: 5px 5px 10px #888888;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.heroImageChild::-webkit-scrollbar {
+    display: none;
+  }
+
+.heroImageChild2 {
+    float: right;
+    overflow-x: scroll;
+    position: absolute;
+    height: calc(300px + 18vw);
+    top: 80px;
+    margin-left: 400px;
+    border-radius: 20px 20px 0 0;
+    z-index: 0;
+
+     /* Hide scrollbar for IE, Edge and Firefox */
+     -ms-overflow-style: none;  /* IE and Edge */
+     scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.heroImageChild2::-webkit-scrollbar {
+    display: none;
+  }
+
+/*------------------------------- CHALLENGE/GOAL -------------------------------*/
+.ChallengeGoal {
+    height: 30vh;
+    padding: 20px;
+}
+
+.challenge {
+    grid-area: challenge;
+    float: left;
+    height: 30vh;
+    width: 30%;
+    margin-left: 15%;
+}
+
+.ChallengeGoal h2, .ChallengeGoal p {
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-right: 50px;
+}
+
+.goal {
+    grid-area: goal;
+    float: right;
+    height: 30vh;
+    width: 30%;
+    margin-right: 15%;
+}
+
+.line {
+    width: 100px;
+    border: 1px solid grey;
+    margin-top: 38px;
+    float: left;
+}
+
+/*------------------------------- PREVIOUS DESIGN -------------------------------*/
+.previousDesign {
+    background-color: #F0EEE9;
+    height: 50vh;
+    padding: 20px 15% 20px 15%;
+}
+
+.previousImages {
+    position: relative;
+    height: fit-content;
+}
+
+
+.old1 {
+    position: absolute;
+    z-index: 2;
+
+}
+
+.old2 {
+    position: absolute;
+    z-index: 1;
+}
+
+.old3 {
+    position: absolute;
+}
+
+
+/*------------------------------- FOOTER -------------------------------*/
+
+footer {
+    grid-area: footer;
+}
