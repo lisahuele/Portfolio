@@ -180,6 +180,36 @@ h2 {
     max-width: 100%;
 }
 
+/*---------------------------- BACK TO TOP BUTTON----------------------------*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99;
+    outline: none;
+    border: none;
+    cursor: pointer; 
+    border-radius: 50%; 
+    background-color: #939597;
+    opacity: 50%;
+    height: 80px;
+    width: 80px;
+  }
+
+  #myBtn:hover {
+    background-color: #F5DF4D;
+    opacity: 1;
+    box-shadow: 1px 1px 10px grey;
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: ease-in-out 0.2s;
+  }
+  
+
 
 /*------------------------------- DESIGN PROCESS -------------------------------*/
 
@@ -585,5 +615,3 @@ h2 {
         position: absolute;
     }
 }
-
-
