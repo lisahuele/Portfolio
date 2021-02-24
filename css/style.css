@@ -36,10 +36,16 @@ h2 {
     padding-bottom: 0.5em;
 }
 
-h3 {
+h3, h4 {
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: normal;
     font-size: 1.5em;
+}
+
+h5 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-size: 1em;
 }
 
 /*GRID LAYOUT*/
@@ -513,6 +519,7 @@ footer {
        position: relative;
        bottom: 0;
        left: 0;
+       background-color: #2C2C2C;
     }
 
     .row ul {
