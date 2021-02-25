@@ -211,13 +211,19 @@ h2 {
 /*-------------------------- DESIGN PROCESS NAVIGATION --------------------------*/
 .navigation-section {
     padding-top: 0;
-    width: 100%;
-    position: -webkit-sticky; /*Safari*/
-    position: sticky;
-    top: 0;
-    z-index: 5;
     background-color: white;
-    
+    position: static;
+    animation: ease-in-out 0.3s;
+}
+
+.stuck {
+    padding-top: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid grey;
+    z-index: 5;
 }
 
 .containerFluid {
@@ -239,6 +245,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .navigation-steps {
