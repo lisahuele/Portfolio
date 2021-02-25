@@ -1,5 +1,4 @@
 body, html {
-    height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -180,37 +179,6 @@ h2 {
     max-width: 100%;
 }
 
-/*---------------------------- BACK TO TOP BUTTON----------------------------*/
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed;
-    bottom: 50px; 
-    right: 50px; 
-    z-index: 99;
-    outline: none;
-    border: none;
-    cursor: pointer; 
-    border-radius: 50%; 
-    background-color: #939597;
-    opacity: 50%;
-    height: 80px;
-    width: 80px;
-  }
-
-  #myBtn:hover {
-    background-color: #F5DF4D;
-    opacity: 1;
-    box-shadow: 1px 1px 10px grey;
-    -moz-transform: translateY(-5px);
-    -ms-transform: translateY(-5px);
-    -o-transform: translateY(-5px);
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px);
-    transition: ease-in-out 0.2s;
-  }
-  
-
-
 /*------------------------------- DESIGN PROCESS -------------------------------*/
 
 .designProcessContainer {
@@ -244,6 +212,12 @@ h2 {
 .navigation-section {
     padding-top: 0;
     width: 100%;
+    position: -webkit-sticky; /*Safari*/
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
+    
 }
 
 .containerFluid {
@@ -265,10 +239,6 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: -webkit-sticky; /*Safari*/
-    position: sticky;
-    top: 0;
-
 }
 
 .navigation-steps {
@@ -373,7 +343,7 @@ h2 {
     color: black;
 }
 
-/*------------------------------ NAVIGATION TITLE ------------------------------*/
+/*--------------------------- NAVIGATION TITLE ---------------------------*/
 .titleContainer {
     background-color: #F0EEE9;
     display: flex;
@@ -607,6 +577,35 @@ h2 {
     margin-left: 1vw;
     margin-top: 1.6vh;
 }
+
+/*---------------------------- BACK TO TOP BUTTON----------------------------*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 50px; 
+    right: 50px; 
+    z-index: 99;
+    outline: none;
+    border: none;
+    cursor: pointer; 
+    border-radius: 50%; 
+    background-color: #939597;
+    opacity: 50%;
+    height: 80px;
+    width: 80px;
+  }
+
+  #myBtn:hover {
+    background-color: #F5DF4D;
+    opacity: 1;
+    box-shadow: 1px 1px 10px grey;
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    transition: ease-in-out 0.2s;
+  }
 
 /*----------------------------------- FOOTER -----------------------------------*/
 
