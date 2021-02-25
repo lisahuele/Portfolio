@@ -76,8 +76,7 @@ body, html {
 }
 
 .about img {
-    max-height: 15vw;
-    max-width: 524px;
+    max-width: 80%;
     margin-left: 20px;
 }
 

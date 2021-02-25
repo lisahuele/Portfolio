@@ -26,6 +26,7 @@ $(window).scroll(function() {
     if (windowTop > stickyTop) {
   
       $(".navigation-section").addClass("stuck");
+      
     } else {   
       $(".navigation-section").removeClass("stuck");
     }
