@@ -33,7 +33,6 @@ h2 {
     text-transform: uppercase;
     white-space: nowrap;
     padding-top: 0.5em;
-    margin-bottom: -2vh;
 }
 
 h3, h4 {
@@ -128,7 +127,6 @@ h5 {
 /*Navigation*/
 .header {
     grid-area: header;
-    background-color: #939597;
     width: 100%;
     height: 100px;
     font-family: 'Times New Roman', Times, serif;
@@ -353,7 +351,7 @@ a {
 }
 
 #work h2 {
-    margin-bottom: -1vh;
+    margin-bottom: 0;
 }
 
 #blm {

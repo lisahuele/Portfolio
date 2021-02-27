@@ -6,7 +6,6 @@ body, html {
     padding: 0;
 }
 
-
 .gridLayout {
     Background-color: white;
     Display: grid;
@@ -39,6 +38,22 @@ body, html {
 .aboutNav {
     border-bottom: 2px solid #F5DF4D;;
     padding-bottom: 3px;
+}
+
+.header a {
+    color: black;
+}
+
+.slice, .slice .top, .slice .bottom, .slice .bottom span, .slice:hover .top, .slice:hover .bottom, .slice:hover, .slice:focus, .slice:active, .slice:before  {
+    color: black;
+}
+
+.slice {
+    border: 2px solid black;
+}
+
+.slice:before {
+    background-color: black;
 }
 
 .profileIMG {

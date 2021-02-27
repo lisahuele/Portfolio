@@ -28,6 +28,26 @@ h2 {
     padding-bottom: 3px;
 }
 
+.header {
+background-color: #F0EEE9;
+}
+
+.header a {
+    color: black;
+}
+
+.slice, .slice .top, .slice .bottom, .slice .bottom span, .slice:hover .top, .slice:hover .bottom, .slice:hover, .slice:focus, .slice:active, .slice:before  {
+    color: black;
+}
+
+.slice {
+    border: 2px solid black;
+}
+
+.slice:before {
+    background-color: black;
+}
+
 /*--------------------------- GRID LAYOUT -------------------------*/
 .heroGrid {
     display: grid;
@@ -202,6 +222,7 @@ h2 {
 
 .processList h2 {
     padding-top: 0;
+    margin-bottom: 10px;
 }
 
 .bold {
