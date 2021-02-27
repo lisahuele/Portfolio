@@ -27,7 +27,7 @@ $(window).scroll(function() {
   
       $(".navigation-section").addClass("stuck");
       
-    } else {   
+    } else {
       $(".navigation-section").removeClass("stuck");
     }
   });
