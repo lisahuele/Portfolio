@@ -20,7 +20,7 @@ body {
 
 /*Text*/
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: calc(20px + 1.5vw);
     font-weight: normal;
     color: black;
@@ -29,7 +29,7 @@ h1 {
 h2 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
-    font-size: 1em;
+    font-size: 2em;
     text-transform: uppercase;
     white-space: nowrap;
     padding-top: 0.5em;
@@ -339,18 +339,21 @@ a {
 .approach {
     grid-area: approach;
     text-align: center;
-    padding-top: 20px;
- 
+    margin-top: -2vh;
 }
 
 .approach p {
     line-height: 30px;
+    margin-top: -2vh;
 }
 
 /* MY WORK */
 #work {
     grid-area: work;
-    color: #939597;
+}
+
+#work h2 {
+    margin-bottom: -1vh;
 }
 
 #blm {
