@@ -24,10 +24,110 @@ $(window).scroll(function() {
     var windowTop = $(window).scrollTop();
   
     if (windowTop > stickyTop) {
-  
       $(".navigation-section").addClass("stuck");
+      $(".step-number").addClass("step-number-stuck");
+      $(".step-name").addClass("step-name-stuck");
+      $(".nav-step").addClass("nav-step-stuck");
+      $(".sticky-header").addClass("sticky-header-stuck");
+      $(".navigation-steps").addClass("navigation-steps-stuck");
+      $(".nav-step-content").addClass("nav-step-content-stuck");
       
     } else {
       $(".navigation-section").removeClass("stuck");
+      $(".step-number").removeClass("step-number-stuck");
+      $(".step-name").removeClass("step-name-stuck");
+      $(".nav-step").removeClass("nav-step-stuck");
+      $(".sticky-header").removeClass("sticky-header-stuck");
+      $(".navigation-steps").removeClass("navigation-steps-stuck");
+      $(".nav-step-content").removeClass("nav-step-content-stuck");
+
     }
+  });
+
+//research
+  $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('#research').offset().top - 100) {
+            $(".step-1").addClass("step-1-stuck");
+            $(".step-name-1").addClass("step-name-1-stuck");
+  
+        } else {
+            $(".step-1").removeClass("step-1-stuck");
+            $(".step-name-1").removeClass("step-name-1-stuck");
+        }
+    });
+  });
+
+  //define
+  $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('#define').offset().top - 100) {
+            $(".nav-step-2").append("<style>.nav-step-2:before{background-color:black !important;}</style>");
+            $(".step-2").addClass("step-2-stuck");
+            $(".step-name-2").addClass("step-name-2-stuck");
+
+  
+        } else {
+            $(".step-2").removeClass("step-2-stuck");
+            $(".step-name-2").removeClass("step-name-2-stuck");
+            $(".nav-step-2").append("<style>.nav-step-2:before{background-color:#939597 !important;}</style>");
+        }
+    });
+  });
+
+  //ideate
+  $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('#ideate').offset().top - 100) {
+            $(".nav-step-3").append("<style>.nav-step-3:before{background-color:black !important;}</style>");
+            $(".step-3").addClass("step-3-stuck");
+            $(".step-name-3").addClass("step-name-3-stuck");
+
+  
+        } else {
+            $(".step-3").removeClass("step-3-stuck");
+            $(".step-name-3").removeClass("step-name-3-stuck");
+            $(".nav-step-3").append("<style>.nav-step-3:before{background-color:#939597 !important;}</style>");
+        }
+    });
+  });
+
+  //Prototype
+  $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('#prototype').offset().top - 100) {
+            $(".nav-step-4").append("<style>.nav-step-4:before{background-color:black !important;}</style>");
+            $(".step-4").addClass("step-4-stuck");
+            $(".step-name-4").addClass("step-name-4-stuck");
+
+  
+        } else {
+            $(".step-4").removeClass("step-4-stuck");
+            $(".step-name-4").removeClass("step-name-4-stuck");
+            $(".nav-step-4").append("<style>.nav-step-4:before{background-color:#939597 !important;}</style>");
+        }
+    });
+  });
+
+  //Testing
+  $(function(){
+    $(document).scroll(function(){
+        if($(this).scrollTop() >= $('#testing').offset().top - 100) {
+            $(".nav-step-5").append("<style>.nav-step-5:before{background-color:black !important;}</style>");
+            $(".step-5").addClass("step-5-stuck");
+            $(".step-name-5").addClass("step-name-5-stuck");
+
+  
+        } else {
+            $(".step-5").removeClass("step-5-stuck");
+            $(".step-name-5").removeClass("step-name-5-stuck");
+            $(".nav-step-5").append("<style>.nav-step-5:before{background-color:#939597 !important;}</style>");
+        }
+    });
+  });
+
+  //image
+
+  $(document).ready(function(){
+    $('.heroImage1').zoom({url: 'BLM_images/Home V2.png'});
   });

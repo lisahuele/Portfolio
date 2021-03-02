@@ -8,15 +8,6 @@ p {
     line-height: 1.8em;
 }
 
-.h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    font-size: 1.1em;
-    text-transform: none;
-    white-space: nowrap;
-    line-height: 30px;
-}
-
 h2 {
     text-transform: none;
     font-size: calc(20px + 0.3vw);
@@ -24,7 +15,7 @@ h2 {
 }
 
 .work {
-    border-bottom: 2px solid #F5DF4D;;
+    border-bottom: 3px solid #F5DF4D;;
     padding-bottom: 3px;
 }
 
@@ -124,20 +115,20 @@ background-color: #F0EEE9;
     display: flex;
     flex-direction: row;
     background-color:white;
-    padding: 5vh 15% 5vh 15%;
+    padding: 5vh 20% 5vh 20%;
 }
 
-.challenge h2:before {
+.challenge h3:before {
     content: "";
     width: 2%;
     height: 2px;
     position: absolute;
     background-color: #939597;
-    left: 12vw;
+    left: 17vw;
     margin-top: 1.2vh;
 }
 
-.goal h2:before {
+.goal h3:before {
     content: "";
     width: 2%;
     height: 2px;
@@ -155,7 +146,7 @@ background-color: #F0EEE9;
     grid-area: previousDesign;
     background-color: #F0EEE9;
     height: fit-content;
-    padding: 20px 15% 50px 15%; /* Top/Right/Bottom/Left */
+    padding: 20px 20% 50px 20%; /* Top/Right/Bottom/Left */
     display: flex;
     flex-direction: column;
 }
@@ -231,20 +222,10 @@ background-color: #F0EEE9;
 
 /*-------------------------- DESIGN PROCESS NAVIGATION --------------------------*/
 .navigation-section {
-    padding-top: 0;
+    padding-top: 50px;
     background-color: white;
     position: static;
     animation: ease-in-out 0.3s;
-}
-
-.stuck {
-    padding-top: 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border-bottom: 1px solid grey;
-    z-index: 5;
 }
 
 .containerFluid {
@@ -266,7 +247,6 @@ background-color: #F0EEE9;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .navigation-steps {
@@ -279,7 +259,6 @@ background-color: #F0EEE9;
     justify-content: center;
     position: relative;
     text-align: center;
- 
 }
 
 .navigation-steps, .nav-step:first-child {
@@ -312,7 +291,7 @@ background-color: #F0EEE9;
 }
 
 @media (min-width: 768px) {
-    .nav-step:not(:first-child):before {
+    .nav-step:not(:first-child):before, .nav-step-2:before, .nav-step-3:before, .nav-step-4:before, .nav-step-5:before {
         content: "";
         position: absolute;
         top: 44px;
@@ -320,6 +299,7 @@ background-color: #F0EEE9;
         width: 52%;
         height: 2px;
         background-color: #939597;
+        transition: ease-in-out;
     }
 }
 
@@ -354,6 +334,7 @@ background-color: #F0EEE9;
     color: #939597;
 }
 
+
 .step-name {
     text-align: center;
     color: black;
@@ -370,6 +351,83 @@ background-color: #F0EEE9;
     border: none;
     color: black;
 }
+
+/*-------------- STUCK --------------*/
+.stuck {
+    padding-top: 0;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 0px 3px 0.5px #939597;
+    z-index: 5;
+}
+
+.step-number-stuck {
+    margin-right: auto;
+    font-weight: 500;
+    flex-direction: row;
+    margin: 0 auto 10px;
+    font-size: 1rem;
+    background: white;
+    border: 2px solid #939597;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50%;
+    transition: all .3s;
+    position: relative;
+    z-index: 1;
+    float: none;
+    cursor: pointer;
+    color: #939597;
+}
+
+.step-name-stuck {
+    text-align: center;
+    color: black;
+    padding: 2px;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .nav-step-stuck:not(:first-child):before {
+        content: "";
+        position: absolute;
+        top: 25px;
+        left: -20%;
+        width: 40%;
+        height: 2px;
+        background-color: #939597;
+    }
+}
+
+@media (min-width: 768px) {
+    .sticky-header-stuck, .navigation-steps-stuck, .nav-step-stuck, .nav-step-content-stuck {
+        width: 8vw;
+        padding: 5px 10px;
+        position: relative;
+    }
+}
+
+/*-------------- FOR JQUERY NAV --------------*/
+.step-1-stuck, .step-2-stuck, .step-3-stuck, .step-4-stuck, .step-5-stuck {
+    background-color: #FADE11;
+    border: none;
+    font-weight: bold;
+    color: black;
+}
+
+.step-name-1-stuck, .step-name-2-stuck, .step-name-3-stuck, .step-name-4-stuck, .step-name-5-stuck {
+    font-weight: bold;
+}
+
+
 
 /*--------------------------- NAVIGATION TITLE ---------------------------*/
 .titleContainer {
@@ -388,7 +446,7 @@ background-color: #F0EEE9;
 
 .content {
     text-align: left;
-    margin: 0 15% 10vh 15%; /* Top - Left - Bottom - Right */
+    margin: 0 25% 10vh 25%; /* Top - Left - Bottom - Right */
 }
 
 .content h3 {
@@ -397,7 +455,7 @@ background-color: #F0EEE9;
 }
 
 .container {
-    margin: -10vh 15% 0 15%; /* Top - Left - Bottom - Right */
+    margin: -10vh 25% 0 25%; /* Top - Left - Bottom - Right */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,6 +481,48 @@ background-color: #F0EEE9;
 .contentChild p {
     margin-bottom: -10px;
 }
+/* IMAGE ZOOM */
+
+img {
+    cursor: -webkit-zoom-in;
+    cursor: -moz-zoom-in;
+    cursor: zoom-in;
+}
+
+/* This block of CSS adds opacity transition to background */
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
 
 /*------------------------------ RESEARCH ------------------------------*/
 
@@ -431,6 +531,18 @@ background-color: #F0EEE9;
     font-size: 2em;
     font-weight: bold;
     color: #00A0B0;
+}
+
+.stat-content {
+    font-size: 0.8em;
+}
+
+.padding {
+    padding-bottom: 36px;
+}
+
+.padding2 {
+    padding-bottom: 18px;
 }
 
 .contentChild {
@@ -455,9 +567,10 @@ background-color: #F0EEE9;
     background-color: #F2F2F2;
     padding: 5px;
     border-radius: 20px;
-    width: 80%;
+    width: 100%;
     display: flexbox;
     margin: auto;
+    text-align: center;
 }
 
 .textBox h5, .textBox h4 {
@@ -470,8 +583,14 @@ background-color: #F0EEE9;
     content: "\201C";
     padding-right: 10px;
     margin-left: -25px;
-    font-size: 1.5em;
     font-family: 'Times New Roman', Times, serif;
+}
+
+.textBox h4:after {
+    content: "\201D";
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 200px;
+    padding-left: 10px;
 }
 
 .textBox h4 {
@@ -484,7 +603,7 @@ background-color: #F0EEE9;
     margin-top: -50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 50px 15% 0 15%; /* Top - Left - Bottom - Right */
+    padding: 50px 15% 50px 15%; /* Top - Left - Bottom - Right */
     grid-gap: 50px;
     grid-template-areas: 
     "topLeft topRight"
@@ -610,6 +729,11 @@ background-color: #F0EEE9;
     margin-bottom: -0.5vh;
 }
 
+#testing .content .line, #testing .content .p {
+    margin-left: -20%;
+    margin-right: -20%;
+} 
+
 /*---------------------------- BACK TO TOP BUTTON----------------------------*/
 #myBtn {
     display: none; /* Hidden by default */
@@ -646,3 +770,4 @@ background-color: #F0EEE9;
         position: absolute;
     }
 }
+

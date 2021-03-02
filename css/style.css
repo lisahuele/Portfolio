@@ -20,11 +20,11 @@ body {
 
 /*Text*/
 h1 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: calc(20px + 1.5vw);
-    font-weight: normal;
+    font-weight: bold;
     color: black;
-    margin-bottom: 20px;
+    
 }
 h2 {
     font-family: 'Times New Roman', Times, serif;
@@ -53,15 +53,15 @@ h5 {
     Display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-gap: 5vh;
     grid-template-areas: 
     "header header header"
     "approach approach approach"
     "work work work"
     "profile aboutMe aboutMe"
     "footer footer footer";
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 @media (max-width: 980px) {
@@ -79,11 +79,11 @@ h5 {
     }
   }
 
-/*Hero Section*/
+/*----------Hero Section-------------*/
 .heroImage {
     grid-area: header;
-    background-image: url("../Images/HeroImage.png");
-    height: calc(462px + 35vw);
+    background-image: url("../Images/Hero.png");
+    height: calc(462px + 28vw);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,7 +110,7 @@ h5 {
 .heroText p {
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 6vw;
+    font-size: 5vw;
     font-weight: normal;
     color: #939597;
     white-space: nowrap;
@@ -120,8 +120,9 @@ h5 {
     padding: 0%;
     top: 55%;
     left: 21%;
-    width: 15vw;
+    width: 13vw;
     height: auto;
+    filter: brightness(110%);
 }
 
 /*Navigation*/
@@ -333,11 +334,15 @@ a {
     color: white;
 }
 
-/* MY APPROACH */
+/* ------------------- MY APPROACH ------------------- */
 .approach {
     grid-area: approach;
     text-align: center;
-    margin-top: -2vh;
+    margin-top: -5vh;
+}
+
+.approach img {
+    width: 20%;
 }
 
 .approach p {
@@ -345,20 +350,13 @@ a {
     margin-top: -2vh;
 }
 
-/* MY WORK */
+/* ---------------------- MY WORK ---------------------- */
 #work {
     grid-area: work;
 }
 
-#work h2 {
-    margin-bottom: 0;
-}
-
-#blm {
-    color: black;
-    margin-top: 0;
-    padding: 0;
-    line-height: 0;
+#work h1 {
+    margin-bottom: 10px;
 }
 
 #blmIMG {
@@ -368,7 +366,7 @@ a {
     justify-content: center;
 }
 
-.blm {
+.blmContainer {
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -376,25 +374,46 @@ a {
 
 }
 
-.blm img {
+.blmContainer img {
     max-width: 100%;
     transition: all 0.3s;
     display: block;
     width: 100%;
     transform: scale(1);
     justify-content: center;
+    border-radius: 10px;
 }
 
-.blm:hover img {
+.blmContainer:hover img {
     transform: scale(1.1);
+    border-radius: 10px;
 }
 
-#work p {
+.overlay {
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+    right: 20%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 60%;
+    transition: .5s ease;
+    opacity:0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.blmContainer:hover .overlay {
+    opacity: 1;
+}
+
+.overlay p {
     color: #939597;
-    line-height: 0%;
+    margin-top: -25px;
 }
 
-/* ABOUT ME */
+/* ---------------------- ABOUT ME ---------------------- */
 .profile {
     grid-area: profile;
 }
@@ -404,13 +423,13 @@ a {
     padding-top: 40px;
     padding-bottom: 40px;
     width: 90%;
-    min-width: 200px;
+    min-width: 150px;
 }
 
 .aboutMe {
     grid-area: aboutMe;
     position: relative;
-    padding-top: 10%;
+    padding-top: 3%;
     padding-bottom: 10%;
 }
 
@@ -422,24 +441,22 @@ a {
 .divButton {
     position: relative;
     height: fit-content;
-    margin-top: 30px;
 }
 
 .button {
     cursor: pointer;
-    border: 2px solid black;
-    background-color: transparent;
-    border-radius: 25px;
+    border: none;
+    background-color:#F5DF4D;
+    border-radius: 15px;
     height: 50px;
     width: 200px;
     font-size: 20px;
-    
 }
 
 .button:hover {
     border: transparent;
-    font-weight: bold;
-    background-color: #f5df4d;
+    font-weight: 500;
+    filter: brightness(85%);
 }
 
 @media (max-width: 980px) {
