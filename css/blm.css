@@ -484,9 +484,7 @@ background-color: #F0EEE9;
 /* IMAGE ZOOM */
 
 img {
-    cursor: -webkit-zoom-in;
-    cursor: -moz-zoom-in;
-    cursor: zoom-in;
+
 }
 
 /* This block of CSS adds opacity transition to background */
