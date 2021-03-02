@@ -344,7 +344,7 @@ a {
 
 
 .approach img {
-    max-width: 50%;
+    max-width: 30%;
     padding: 3vh 0 20px 0;
 
 }
@@ -368,7 +368,7 @@ a {
 }
 
 .workContainer img {
-    max-width: 23%;
+    max-width: 25%;
 }
 
 #work h1 {
