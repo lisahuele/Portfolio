@@ -2,6 +2,7 @@ body, html {
     width: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -93,22 +94,40 @@ background-color: #F0EEE9;
     display: none;
   }
 
-  .heroImage1 {
+.heroImage1 {
     z-index: 1;
     box-shadow: rgb(136, 136, 136) 5px 5px 10px;
     border-radius: 20px 20px 0px 0px;
-    
     position: relative;
     margin-left: -5vw;
     
   }
 
-  .heroImage2 {
+.heroImage2 {
     z-index: 0;
     position: absolute;
     right: 10%;
-    
+    width: fit-content;
   }
+
+.scroll {
+    position: absolute;
+    left: 39%;
+}
+
+.scroll-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    margin-top: 2px;
+}
+
+.scroll p, .scroll img {
+    position: relative;
+}
+
+.scroll img {
+    left: 40%;
+}
 
 /*------------------------------- CHALLENGE/GOAL -------------------------------*/
 .challenge-goal {
@@ -481,46 +500,6 @@ background-color: #F0EEE9;
 .contentChild p {
     margin-bottom: -10px;
 }
-/* IMAGE ZOOM */
-
-img {
-
-}
-
-/* This block of CSS adds opacity transition to background */
-.mfp-with-zoom .mfp-container,
-.mfp-with-zoom.mfp-bg {
-	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-webkit-transition: all 0.3s ease-out; 
-	-moz-transition: all 0.3s ease-out; 
-	-o-transition: all 0.3s ease-out; 
-	transition: all 0.3s ease-out;
-}
-
-.mfp-with-zoom.mfp-ready .mfp-container {
-		opacity: 1;
-}
-.mfp-with-zoom.mfp-ready.mfp-bg {
-		opacity: 0.8;
-}
-
-.mfp-with-zoom.mfp-removing .mfp-container, 
-.mfp-with-zoom.mfp-removing.mfp-bg {
-	opacity: 0;
-}
-
-
-
-/* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
-	padding: 0;
-}
-/* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
-	top: 0;
-	bottom: 0;
-}
 
 /*------------------------------ RESEARCH ------------------------------*/
 
@@ -642,6 +621,19 @@ img {
     .gridImage img {
         width: calc(300px + 10vw);
     }
+}
+
+.scroll2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll2 img {
+    max-height: 25px;
+}
+
+.scroll2 p {
+    margin-left: 10px;
 }
 
 /*------------------------ TESTING/FINAL UI SCREENS ------------------------*/

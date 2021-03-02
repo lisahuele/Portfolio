@@ -30,7 +30,7 @@ h2 {
     font-family: 'Monserrat', sans-serif;
     font-weight: normal;
     font-size: calc(20px + 1vw);
-    text-transform: uppercase;
+    text-transform: normal;
     white-space: nowrap;
     padding-top: 0.5em;
 }
@@ -83,7 +83,7 @@ h5 {
 .heroImage {
     grid-area: header;
     background-image: url("../Images/Hero.png");
-    height: calc(462px + 28vw);
+    height: calc(462px + 33vw);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -370,10 +370,6 @@ a {
     max-width: 25%;
 }
 
-#work h1 {
-    margin-bottom: 10px;
-}
-
 #blmIMG {
     padding: 0;
     display: flex;
@@ -386,7 +382,6 @@ a {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-
 }
 
 .blmContainer img {
@@ -406,11 +401,11 @@ a {
 
 .overlay {
     position: absolute;
-    bottom: 35%;
+    bottom: 23%;
     left: 20%;
     right: 20%;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: transparent;
     color: #f1f1f1;
     width: 60%;
     transition: .5s ease;
@@ -419,12 +414,20 @@ a {
     border-radius: 10px;
 }
 
+.overlay h1 {
+    color: white;
+}
+
+.overlay h1:hover {
+    color: #F5DF4D;
+}
+
 .blmContainer:hover .overlay {
     opacity: 1;
 }
 
 .overlay p {
-    color: #939597;
+    color: white;
     margin-top: -25px;
 }
 
