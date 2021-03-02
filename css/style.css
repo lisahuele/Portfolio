@@ -27,9 +27,9 @@ h1 {
     
 }
 h2 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Monserrat', sans-serif;
     font-weight: normal;
-    font-size: 2em;
+    font-size: calc(20px + 1vw);
     text-transform: uppercase;
     white-space: nowrap;
     padding-top: 0.5em;
@@ -341,8 +341,12 @@ a {
     margin-top: -5vh;
 }
 
+
+
 .approach img {
-    width: 20%;
+    max-width: 30%;
+    padding: 3vh 0 20px 0;
+
 }
 
 .approach p {
@@ -353,6 +357,18 @@ a {
 /* ---------------------- MY WORK ---------------------- */
 #work {
     grid-area: work;
+}
+
+.workContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.workContainer img {
+    max-width: 23%;
 }
 
 #work h1 {
@@ -429,7 +445,7 @@ a {
 .aboutMe {
     grid-area: aboutMe;
     position: relative;
-    padding-top: 3%;
+    padding-top: 4%;
     padding-bottom: 10%;
 }
 
@@ -464,6 +480,10 @@ a {
         padding-top: 0;
         margin-top: -30px;
     }
+}
+
+.aboutMe h1 {
+    font-size: calc(20px + 1vw);
 }
 
 /*------------------------------- FOOTER -------------------------------*/
