@@ -103,7 +103,7 @@ h5 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
     font-size: calc(15px + 0.3vw);
-    color: #939597;
+    color: #BCBCBC;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -112,7 +112,7 @@ h5 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 5vw;
     font-weight: normal;
-    color: #939597;
+    color: #BCBCBC;
     white-space: nowrap;
 }
 #image {
@@ -122,7 +122,6 @@ h5 {
     left: 21%;
     width: 13vw;
     height: auto;
-    filter: brightness(110%);
 }
 
 /*Navigation*/
