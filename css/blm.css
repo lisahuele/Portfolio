@@ -251,6 +251,7 @@ background-color: #F0EEE9;
     width: 1440px;
     max-width: 100%;
     margin: 0 auto;
+    height: fit-content;
 }
 
 .rowChild {
@@ -258,7 +259,6 @@ background-color: #F0EEE9;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: fit-content;
     height: 100%;
 }
 
@@ -321,7 +321,6 @@ background-color: #F0EEE9;
         transition: ease-in-out;
     }
 }
-
 .nav-step-content {
     width: 100%;
     position: relative;
@@ -375,7 +374,7 @@ background-color: #F0EEE9;
 .stuck {
     padding-top: 0;
     width: 100%;
-    height: 10vh;
+    height: fit-content;
     position: fixed;
     top: 0;
     background-color: white;
@@ -388,7 +387,7 @@ background-color: #F0EEE9;
     font-weight: 500;
     flex-direction: row;
     margin: 0 auto 10px;
-    font-size: 1rem;
+    font-size: 1em;
     background: white;
     border: 2px solid #939597;
     width: 30px;
@@ -412,27 +411,30 @@ background-color: #F0EEE9;
     color: black;
     padding: 2px;
     font-weight: 400;
+    font-size: 0.8em;
 }
 
-@media (min-width: 768px) {
-    .nav-step-stuck:not(:first-child):before {
+.nav-step-stuck:not(:first-child):before {
         content: "";
         position: absolute;
         top: 25px;
         left: -20%;
-        width: 40%;
+        width: 3vw;
         height: 2px;
         background-color: #939597;
     }
+
+@media (max-width:980px) {
+    .nav-step-stuck:not(:first-child):before {
+        left: -10%;
+    }
 }
 
-@media (min-width: 768px) {
     .sticky-header-stuck, .navigation-steps-stuck, .nav-step-stuck, .nav-step-content-stuck {
         width: 8vw;
         padding: 5px 10px;
         position: relative;
     }
-}
 
 /*-------------- FOR JQUERY NAV --------------*/
 .step-1-stuck, .step-2-stuck, .step-3-stuck, .step-4-stuck, .step-5-stuck {
