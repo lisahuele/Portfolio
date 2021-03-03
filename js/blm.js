@@ -70,7 +70,7 @@ $(window).scroll(function() {
         } else {
             $(".step-2").removeClass("step-2-stuck");
             $(".step-name-2").removeClass("step-name-2-stuck");
-            $(".nav-step-2").append("<style>.nav-step-2:before{background-color:#939597 !important;}</style>");
+            $(".nav-step-2").append("<style>.nav-step-2:before{background-color:#939597 !important;}</style>")
         }
     });
   });
