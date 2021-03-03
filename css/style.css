@@ -408,7 +408,7 @@ a {
     color: #f1f1f1;
     width: 60%;
     transition: .5s ease;
-    opacity:0;
+    opacity:1;
     text-align: center;
     border-radius: 10px;
 }
