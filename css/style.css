@@ -313,7 +313,7 @@ a {
 	background-color: #F5DF4D;
 	position: absolute;
 	margin-top: 6px;
-    right: -35px;
+    right: -25px;
     color: white;
   
   -webkit-transition: all 1000ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
@@ -333,22 +333,65 @@ a {
     color: white;
 }
 
+.header-stuck {
+    background-color: white;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 5;
+    box-shadow: 0px 0px 3px 0.5px #939597;
+    animation: fadein;
+    animation-duration: 0.3s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.header-stuck a {
+    color: black;
+}
+
+.header-stuck a:hover {
+    color: #939597;
+}
+
+
+.slice-stuck, .slice-stuck .top-stuck, .slice-stuck .bottom-stuck, .slice-stuck .bottom-stuck span, .slice-stuck:hover .top-stuck, .slice-stuck:hover .bottom-stuck, .slice-stuck:hover, .slice-stuck:focus, .slice-stuck:active, .slice-stuck:before  {
+    color: black;
+}
+
+.slice-stuck {
+    border: 2px solid black;
+}
+
+.slice-stuck:before {
+    background-color: black;
+}
+
+
 /* ------------------- MY APPROACH ------------------- */
-.approach {
+#approach {
     grid-area: approach;
     text-align: center;
     margin-top: -5vh;
 }
 
-
-
-.approach img {
+#approach img {
     max-width: 30%;
     padding: 3vh 0 20px 0;
+    min-width: 20%;
 
 }
 
-.approach p {
+#approach p {
     line-height: 30px;
     margin-top: -2vh;
 }
@@ -367,7 +410,8 @@ a {
 }
 
 .workContainer img {
-    max-width: 25%;
+    max-width: 23%;
+    min-width: 20%;
 }
 
 #blmIMG {

@@ -40,6 +40,10 @@ background-color: #F0EEE9;
     background-color: black;
 }
 
+.header a:hover {
+    color: #939597;
+}
+
 /*--------------------------- GRID LAYOUT -------------------------*/
 .heroGrid {
     display: grid;
