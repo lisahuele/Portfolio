@@ -83,7 +83,7 @@ h5 {
 .heroImage {
     grid-area: header;
     background-image: url("../Images/Hero.png");
-    height: calc(462px + 33vw);
+    height: calc(300px + 38vw);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

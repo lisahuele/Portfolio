@@ -115,8 +115,9 @@ body, html {
 }
 
 .about img {
-    max-width: 80%;
+    max-width: 80% ;
     margin-left: 20px;
+    margin-top: 5vh;
 }
 
 .sub, .description {
