@@ -145,6 +145,7 @@ footer {
     bottom: 0; 
 }
 
+
 @media (max-height:890px) {
     footer {
         margin-top: 10vh;
