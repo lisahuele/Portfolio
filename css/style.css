@@ -229,11 +229,11 @@ a {
     color: white;
     overflow: hidden;
     top: 0;
-    -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
-    -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
-    -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
-    -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
-    transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+    -webkit-transition: all 200ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+    -webkit-transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+    -moz-transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+    -o-transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+    transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
     
     -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
     -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
@@ -241,11 +241,11 @@ a {
     -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
     transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
       
-    -webkit-transition-delay:0.35s;     
-    -moz-transition-delay: 0.35s; 
-    -ms-transition-delay: 0.35s;     
-    -o-transition-delay: 0.35s;     
-    transition-delay: 0.35s;
+    -webkit-transition-delay:0.25s;     
+    -moz-transition-delay: 0.25s; 
+    -ms-transition-delay: 0.25s;     
+    -o-transition-delay: 0.25s;     
+    transition-delay: 0.25s;
 }
  
 .slice .bottom {
@@ -255,11 +255,11 @@ a {
     overflow: hidden;
     text-decoration: none;
     bottom: 0;
-    -webkit-transition: all 300ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
-    -webkit-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
-    -moz-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
-    -o-transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
-    transition: all 300ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
+    -webkit-transition: all 200ms cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
+    -webkit-transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+    -moz-transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+    -o-transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); 
+    transition: all 200ms cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
     
     -webkit-transition-timing-function: cubic-bezier(1.000, 0, 0.025, 1); /* older webkit */
     -webkit-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
@@ -267,11 +267,11 @@ a {
     -o-transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); 
     transition-timing-function: cubic-bezier(1.000, -0.055, 0.025, 1.040); /* custom */
       
-    -webkit-transition-delay:0.35s;     
-    -moz-transition-delay: 0.35s; 
-    -ms-transition-delay: 0.35s;     
-    -o-transition-delay: 0.35s;     
-    transition-delay: 0.35s;
+    -webkit-transition-delay:0.25s;     
+    -moz-transition-delay: 0.25s; 
+    -ms-transition-delay: 0.25s;     
+    -o-transition-delay: 0.25s;     
+    transition-delay: 0.25s;
 }
 
 .slice .bottom span {
@@ -320,11 +320,11 @@ a {
     right: -25px;
     color: white;
   
-  -webkit-transition: all 800ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
-  -webkit-transition: all 800ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
-  -moz-transition: all 800ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
-  -o-transition: all 800ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
-  transition: all 800ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
+  -webkit-transition: all 600ms cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
+  -webkit-transition: all 600ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -moz-transition: all 600ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  -o-transition: all 600ms cubic-bezier(0.890, -0.170, 0.140, 1.225); 
+  transition: all 600ms cubic-bezier(0.890, -0.170, 0.140, 1.225); /* custom */
 
   -webkit-transition-timing-function: cubic-bezier(0.890, 0, 0.140, 1); /* older webkit */
   -webkit-transition-timing-function: cubic-bezier(0.890, -0.170, 0.140, 1.225); 
