@@ -674,8 +674,8 @@ background-color: #F0EEE9;
     display: grid;
     margin-top: -50px;
     grid-template-columns: 1fr 1fr;
-    padding: 50px 15% 0 15%; /* Top - Left - Bottom - Right */
-    grid-gap: 5vh;
+    padding: 5vh 18% 0 18%; /* Top - Left - Bottom - Right */
+    grid-gap: 4vh;
     grid-template-areas: 
     "hompageText homepageImage1"
     "homepageImage2 homepageImage3"
@@ -684,8 +684,17 @@ background-color: #F0EEE9;
     "donateImage donateText";
 }
 
+#testing .content .line, #testing .content .p {
+    margin-left: -15%;
+    margin-right: -15%;
+} 
+
 .gridUI h2 {
     font-weight: bold;
+}
+
+.homepageImage1 img, .homepageImage2 img, .homepageImage3 img, .aboutUsImage img, .demandsImage img, .donateImage img {
+    width: 31vw;
 }
 
 @media (max-width: 980px) {
@@ -708,7 +717,7 @@ background-color: #F0EEE9;
         justify-content: center;
         flex-direction: column;
     }
-    .gridUI img {
+    .homepageImage1 img, .homepageImage2 img, .homepageImage3 img, .aboutUsImage img, .demandsImage img, .donateImage img img {
         width: calc(300px + 10vw);
     }
 }
@@ -728,6 +737,7 @@ background-color: #F0EEE9;
     display: none;
   }
 
+
 .homepageText, .aboutUsText, .demandsText, .donateText {
     display: flex;
     justify-content: center;
@@ -740,7 +750,7 @@ background-color: #F0EEE9;
 
 .line:after {
     content: "";
-    width: 60%;
+    width: 105%;
     height: 3px;
     position: absolute;
     background-color: black;
@@ -752,10 +762,9 @@ background-color: #F0EEE9;
     margin-bottom: -0.5vh;
 }
 
-#testing .content .line, #testing .content .p {
-    margin-left: -20%;
-    margin-right: -20%;
-} 
+#testing .p {
+    margin-bottom: -5vh;
+}
 
 
 

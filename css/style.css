@@ -282,6 +282,10 @@ a {
     color: white;
   }
 
+.slice .top span {
+    color: white;
+}
+
 .slice:hover .top {
     top: -5px;
     -webkit-transition-delay:0.35s;     
@@ -364,7 +368,7 @@ a {
 }
 
 
-.slice-stuck, .slice-stuck .top-stuck, .slice-stuck .bottom-stuck, .slice-stuck .bottom-stuck span, .slice-stuck:hover .top-stuck, .slice-stuck:hover .bottom-stuck, .slice-stuck:hover, .slice-stuck:focus, .slice-stuck:active, .slice-stuck:before  {
+.slice-stuck, .slice-stuck .top-stuck, .slice-stuck .bottom-stuck, .slice-stuck .bottom-stuck span, .slice-stuck .top-stuck span, .slice-stuck:hover .bottom-stuck, .slice-stuck:hover .top-stuck, .slice-stuck:hover, .slice-stuck:focus, .slice-stuck:active, .slice-stuck:before  {
     color: black;
 }
 
