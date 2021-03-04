@@ -48,7 +48,7 @@ body, html {
     color: #939597;
 }
 
-.slice, .slice .top, .slice .bottom, .slice .bottom span, .slice:hover .top, .slice:hover .bottom, .slice:hover, .slice:focus, .slice:active, .slice:before  {
+.slice, .slice .top, .slice .bottom, .slice .bottom span, .slice .top span, .slice:hover .top, .slice:hover .bottom, .slice:hover, .slice:focus, .slice:active, .slice:before  {
     color: black;
 }
 
