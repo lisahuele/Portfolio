@@ -125,9 +125,3 @@ $(window).scroll(function() {
         }
     });
   });
-
-  //image
-
-  $(document).ready(function(){
-    $('.heroImage1').zoom({url: 'BLM_images/Home V2.png'});
-  });

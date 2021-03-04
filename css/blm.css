@@ -117,6 +117,7 @@ background-color: #F0EEE9;
 .scroll {
     position: absolute;
     left: 39%;
+    
 }
 
 .scroll-p {
@@ -325,7 +326,6 @@ background-color: #F0EEE9;
     }
 }
 
-
 .nav-step-content {
     width: 100%;
     position: relative;
@@ -512,14 +512,27 @@ background-color: #F0EEE9;
     justify-content: center;
 }
 
+.imageContent a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .imageContent img {
     width: 60%;
     max-width: 100%;
+    cursor: zoom-in;
+}
+
+.imageContent img:hover {
+    opacity: 0.7;
 }
 
 .contentChild p {
     margin-bottom: -10px;
 }
+
+/*image enlarger*/
 
 /*------------------------------ RESEARCH ------------------------------*/
 
