@@ -93,12 +93,16 @@ body, html {
     .about {
         padding: 0;
         margin-bottom: 30vh;
-        margin-right: 20px !important;
-        margin-left: 20px !important;
+        margin-right: 15% !important;
+        margin-left: 15% !important;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    .about img {
+        width: 300px;
     }
 
     .button {
@@ -115,7 +119,7 @@ body, html {
 }
 
 .about img {
-    max-width: 80% ;
+    max-width: 400px ;
     margin-left: 20px;
     margin-top: 5vh;
 }
@@ -149,9 +153,7 @@ footer {
 
 @media (max-height:890px) {
     footer {
-        margin-top: 10vh;
         position: relative;
-    
     }
    
     .profileIMG img {

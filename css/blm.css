@@ -65,6 +65,7 @@ background-color: #F0EEE9;
     "BLM-image"
     "challenge-goal";
    }
+
    .BLM-image img {
     width: calc(300px + 10vw);
     padding-left: 15%;
@@ -77,6 +78,12 @@ background-color: #F0EEE9;
     padding-top: 5%;
     top: 0;
     padding-bottom: 5%;
+}
+@media (max-width: 980px) {
+    .BLM-text h1, .BLM-text p {
+        text-align: center;
+    }
+
 }
 
 .BLM-image {
@@ -165,6 +172,16 @@ background-color: #F0EEE9;
 .goal {
     padding-left: 10%;
 }
+
+@media (max-width: 980px) {
+    .challenge-goal {
+        flex-direction: column;
+        text-align: center;
+    }
+    .goal h3:before, .challenge h3:before {
+        content: none;
+    }
+}
 /*------------------------------- DESIGN PROCESS -------------------------------*/
 
 .designProcessContainer {
@@ -186,13 +203,20 @@ background-color: #F0EEE9;
     padding-left: 0;
 }
 
-.processList h2 {
+.processList h3 {
     padding-top: 0;
     margin-bottom: 10px;
 }
 
 .bold {
     font-weight: bold;
+}
+
+@media (max-width: 980px) {
+    .processList {
+        line-height: 30px;
+        padding: 0 5% 0 5%;
+    }
 }
 
 /*-------------------------- DESIGN PROCESS NAVIGATION --------------------------*/
@@ -205,7 +229,6 @@ background-color: #F0EEE9;
 }
 
 .containerFluid {
-    width: 1440px;
     max-width: 100%;
     margin: 0 auto;
     height: fit-content;
@@ -228,7 +251,6 @@ background-color: #F0EEE9;
 .navigation-steps {
     width: 100%;
     height: 100%;
-    min-height: 48px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -247,36 +269,35 @@ background-color: #F0EEE9;
     align-items: center;
 }
 
-@media (min-width: 768px) {
-    .sticky-header, .navigation-steps, .nav-step, .nav-step-content {
-        width: 180px;
-        padding: 20px 10px;
-        position: relative;
-    }
+
+.sticky-header, .navigation-steps, .nav-step, .nav-step-content {
+    width: 180px;
+    padding: 20px 10px;
+    position: relative;
 }
 
-@media (min-width: 768px) {
-    .sticky-header, .navigation-steps, .nav-step {
-        position: relative;
-        text-align: center;
-        opacity: 1;
-        padding: 0;
-        background: transparent;
-        width: auto;
-    }
+
+
+.sticky-header, .navigation-steps, .nav-step {
+    position: relative;
+    text-align: center;
+    opacity: 1;
+    padding: 0;
+    background: transparent;
+    width: auto;
 }
 
-@media (min-width: 768px) {
-    .nav-step:not(:first-child):before, .nav-step-2:before, .nav-step-3:before, .nav-step-4:before, .nav-step-5:before {
-        content: "";
-        position: absolute;
-        top: 44px;
-        left: -26%;
-        width: 52%;
-        height: 2px;
-        background-color: #939597;
-    }
+
+.nav-step:not(:first-child):before, .nav-step-2:before, .nav-step-3:before, .nav-step-4:before, .nav-step-5:before {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: -26%;
+    width: 52%;
+    height: 2px;
+    background-color: #939597;
 }
+
 
 .nav-step-content {
     width: 100%;
@@ -293,8 +314,8 @@ background-color: #F0EEE9;
     font-size: 1.5rem;
     background: white;
     border: 2px solid #939597;
-    width: 48px;
-    height: 48px;
+    width: 2.5vw;
+    height: 2.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,6 +330,57 @@ background-color: #F0EEE9;
     color: #939597;
 }
 
+@media (max-width: 980px) {
+    .step-number {
+        margin-right: 10px;
+        font-weight: 500;
+        flex-direction: row;
+        margin: 0 auto 10px;
+        font-size: 1em;
+        background: white;
+        border: 2px solid #939597;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        line-height: 1;
+        border-radius: 50%;
+        transition: all .3s;
+        position: relative;
+        z-index: 1;
+        float: none;
+        cursor: pointer;
+        color: #939597;
+    }
+
+    .step-name {
+        text-align: center;
+        color: black;
+        padding: 2px;
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+    
+    .nav-step:not(:first-child):before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: -15%;
+        width: 5vw;
+        height: 2px;
+        background-color: #939597;
+        animation: linear;
+    } 
+
+    .sticky-header, .navigation-steps, .nav-step, .nav-step-content {
+        width: 100%;
+        padding: 0;
+        position: relative;
+    }
+    
+}
 
 .step-name {
     text-align: center;
@@ -351,7 +423,6 @@ background-color: #F0EEE9;
     }
 }
 
-
 .step-number-stuck {
     margin-right: auto;
     font-weight: 500;
@@ -385,27 +456,34 @@ background-color: #F0EEE9;
 }
 
 .nav-step-stuck:not(:first-child):before {
-        content: "";
-        position: absolute;
-        top: 25px;
-        left: -20%;
-        width: 3vw;
-        height: 2px;
-        background-color: #939597;
-        animation: linear;
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: -20%;
+    width: 3vw;
+    height: 2px;
+    background-color: #939597;
+    animation: linear;
+    }
+
+.sticky-header-stuck, .navigation-steps-stuck, .nav-step-stuck, .nav-step-content-stuck {
+    width: 150px;
+    padding: 5px 10px;
+    position: relative;
     }
 
 @media (max-width:980px) {
     .nav-step-stuck:not(:first-child):before {
-        left: -10%;
+        content: none;
+    }
+
+
+.sticky-header-stuck, .navigation-steps-stuck, .nav-step-stuck, .nav-step-content-stuck {
+    width: 80%;
+    padding: 5px 10px;
+    position: relative;
     }
 }
-
-    .sticky-header-stuck, .navigation-steps-stuck, .nav-step-stuck, .nav-step-content-stuck {
-        width: 8vw;
-        padding: 5px 10px;
-        position: relative;
-    }
 
 /*-------------- FOR JQUERY NAV --------------*/
 .step-1-stuck, .step-2-stuck, .step-3-stuck, .step-4-stuck, .step-5-stuck {
@@ -441,6 +519,12 @@ background-color: #F0EEE9;
     margin: 0 25% 10vh 25%; /* Top - Left - Bottom - Right */
 }
 
+@media (max-width: 980px) {
+    .content {
+        margin: 0 10% 10vh 10%;
+    }
+}
+
 .content h3 {
     margin-bottom: -5px;
     font-weight: bold;
@@ -453,6 +537,13 @@ background-color: #F0EEE9;
     justify-content: center;
     flex-direction: row;
 }
+
+@media (max-width: 980px) {
+    .container {
+        margin: 0 10% 10vh 10%;
+    }
+}
+
 
 .statContainer {
     text-align: center;
@@ -485,10 +576,11 @@ background-color: #F0EEE9;
     margin-bottom: -10px;
 }
 
-/*image enlarger*/
+#research, #define, #ideate, #prototype, #testing {
+    scroll-margin: 10vh;
+}
 
 /*------------------------------ RESEARCH ------------------------------*/
-
 .stat-number {
     margin-bottom: 2vh;
     font-size: 2em;
@@ -522,6 +614,12 @@ background-color: #F0EEE9;
     display: block;
     line-height: 1.8em;
     margin-bottom: -1em;
+}
+
+@media (max-width: 980px) {
+    .contentChild ol, .content ol {
+        padding-left: 0;
+    }
 }
 
 /*------------------------------ DEFINE ------------------------------*/
@@ -673,6 +771,14 @@ background-color: #F0EEE9;
     .homepageImage1 img, .homepageImage2 img, .homepageImage3 img, .aboutUsImage img, .demandsImage img, .donateImage img img {
         width: calc(300px + 10vw);
     }
+
+    .aboutUsImage, .donateImage {
+        margin-top: 50px;
+    }
+
+    .donateText {
+        margin-top: -50px;
+    }
 }
 
 .homepageImage1, .aboutUsImage, .demandsImage, .donateImage {
@@ -719,7 +825,20 @@ background-color: #F0EEE9;
     margin-bottom: -5vh;
 }
 
+@media (max-width: 980px) {
+    #testing .content .line, #testing .content .p {
+        margin-left: 0;
+        margin-right: 0
+    }
 
+    .line:after {
+        width: 35%;
+    }
+
+    .donateImage img {
+        width: 100%;
+    }
+}
 
 /*---------------------------- BACK TO TOP BUTTON----------------------------*/
 #myBtn {
