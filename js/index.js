@@ -20,7 +20,7 @@ $(function(){
 })();
 
 function scrollTo() {
-    const links = document.querySelectorAll('.scroll');
+    const links = document.querySelectorAll('.scrollWork');
     links.forEach(each => (each.onclick = scrollAnchors));
 }
 
