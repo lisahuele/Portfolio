@@ -161,6 +161,10 @@ a {
      color: #F5DF4D;
  } 
 
+a:active, a:focus {
+    outline: none;
+}
+
  @media (max-width: 980px) {
     .header {
         height: 150px; }
@@ -403,6 +407,12 @@ a {
 /* ---------------------- MY WORK ---------------------- */
 #work {
     grid-area: work;
+    scroll-margin-top: 10vh;
+    outline: none;
+}
+
+#work:active, #work:focus {
+    outline: none;
 }
 
 .workContainer {
@@ -439,7 +449,6 @@ a {
     width: 100%;
     transform: scale(1);
     justify-content: center;
-    border-radius: 10px;
 }
 
 .blmContainer:hover img {
