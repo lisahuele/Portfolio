@@ -62,8 +62,8 @@ h2 {
 }
 
 .contentLeft img {
-    max-width: 458px;
-    min-width: 350px;
+    max-width: 430px;
+    min-width: 430px;
 }
 
 .contentRight {
@@ -76,7 +76,7 @@ h2 {
 
 .contentRight img {
     max-width: 350px;
-    min-width: 300px;
+    min-width: 350px;
 }
 
 .contentRight p {
