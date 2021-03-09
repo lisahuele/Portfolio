@@ -119,3 +119,25 @@ h2 {
         margin-top: 0;
     }
 }
+
+
+@media (max-width: 980px) {
+    .header {
+        height: 150px; }
+    ul {
+        float: none;
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-right: 0;
+
+    }
+    #navigation {
+        float: none;
+        position: relative;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }
