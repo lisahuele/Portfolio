@@ -1,19 +1,31 @@
-html, body {
-    height: 100%;
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-/*--------------- HEADER ---------------*/
+p {
+    line-height: 1.8em;
+}
+
+h2 {
+    text-transform: none;
+    font-size: calc(20px + 0.3vw);
+    margin-bottom: -10px;
+}
+
 .aboutNav {
     border-bottom: 3px solid #F5DF4D;;
     padding-bottom: 3px;
 }
 
-.header a {
-    color: black;
+.header {
+background-color: #F0EEE9;
 }
 
-.header a:hover {
-    color: #939597;
+.header a {
+    color: black;
 }
 
 .slice, .slice .top, .slice .bottom, .slice .bottom span, .slice .top span, .slice:hover .top, .slice:hover .bottom, .slice:hover, .slice:focus, .slice:active, .slice:before  {
@@ -28,6 +40,9 @@ html, body {
     background-color: black;
 }
 
+.header a:hover {
+    color: #939597;
+}
 /*--------------- CONTENT ---------------*/
 .about-grid {
     display: flex;
