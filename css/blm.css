@@ -473,6 +473,11 @@ background-color: #F0EEE9;
     }
 
 @media (max-width:980px) {
+    .stuck {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .nav-step-stuck:not(:first-child):before {
         content: none;
     }
@@ -707,19 +712,6 @@ background-color: #F0EEE9;
     }
 }
 
-.scroll2 {
-    display: flex;
-    flex-direction: row;
-}
-
-.scroll2 img {
-    max-height: 25px;
-}
-
-.scroll2 p {
-    margin-left: 10px;
-}
-
 /*------------------------ TESTING/FINAL UI SCREENS ------------------------*/
 .gridUI {
     display: grid;
@@ -755,8 +747,6 @@ background-color: #F0EEE9;
         grid-template-areas: 
         "homepageText"
         "homepageImage1"
-        "homepageImage2"
-        "homepageImage3"
         "aboutUsText"
         "aboutUsImage"
         "demandsText"
@@ -768,8 +758,12 @@ background-color: #F0EEE9;
         justify-content: center;
         flex-direction: column;
     }
-    .homepageImage1 img, .homepageImage2 img, .homepageImage3 img, .aboutUsImage img, .demandsImage img, .donateImage img img {
+    .homepageImage1 img, .aboutUsImage img, .demandsImage img, .donateImage img img {
         width: calc(300px + 10vw);
+    }
+
+    .homepageImage2 img, .homepageImage3 img {
+        display: none;
     }
 
     .aboutUsImage, .donateImage {
@@ -868,6 +862,33 @@ background-color: #F0EEE9;
     transform: translateY(-5px);
     transition: ease-in-out 0.2s;
   }
+
+/*---------------------------- SCROLL IMAGE ----------------------------*/
+
+  .scroll2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.scroll2 img {
+    max-height: 25px;
+}
+
+.scroll2 p {
+    margin-left: 10px;
+}
+
+.mobileMode {
+    display: none;
+}
+
+@media (max-width: 980px) {
+    .BLM-text .scroll2 {justify-content: center;}
+    .windowMode {display: none;}
+    .mobileMode {display: inline-block;}
+    .hidden {display:none;}
+
+} 
 
 /*----------------------------------- FOOTER -----------------------------------*/
 
