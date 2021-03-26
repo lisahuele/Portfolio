@@ -1,6 +1,6 @@
 $(function(){
   $(document).scroll(function(){
-       if($(this).scrollTop() >= $('#approach').offset().top) {
+       if($(this).scrollTop() >= $('#profile').offset().top) {
             $(".header").addClass("header-stuck");
             $(".slice").addClass("slice-stuck");
             $(".top").addClass("top-stuck");
