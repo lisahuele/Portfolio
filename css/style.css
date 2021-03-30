@@ -446,7 +446,7 @@ a:active, a:focus {
 }
 
 .link:hover {
-    color: black;
+    color: #333;
 }
 
 .link:after {
@@ -585,9 +585,6 @@ a:active, a:focus {
     .content-child {
         margin: 2vh 0 0 0;
     }
-
-
-
 }
 
 /*------------------------------- FOOTER -------------------------------*/

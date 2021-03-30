@@ -42,7 +42,6 @@ $(window).scroll(function() {
       $(".sticky-header").removeClass("sticky-header-stuck");
       $(".navigation-steps").removeClass("navigation-steps-stuck");
       $(".nav-step-content").removeClass("nav-step-content-stuck");
-
     }
   });
 
@@ -94,10 +93,10 @@ $(window).scroll(function() {
     });
   });
 
-  //Prototype
+  //Test
   $(function(){
     $(document).scroll(function(){
-        if($(this).scrollTop() >= $('#prototype').offset().top - 100) {
+        if($(this).scrollTop() >= $('#test').offset().top - 100) {
             $(".nav-step-4").append("<style>.nav-step-4:before{background-color:black !important;}</style>");
             $(".step-4").addClass("step-4-stuck");
             $(".step-name-4").addClass("step-name-4-stuck");
@@ -111,10 +110,10 @@ $(window).scroll(function() {
     });
   });
 
-  //Testing
+  //Final
   $(function(){
     $(document).scroll(function(){
-        if($(this).scrollTop() >= $('#testing').offset().top - 100) {
+        if($(this).scrollTop() >= $('#final').offset().top - 100) {
             $(".nav-step-5").append("<style>.nav-step-5:before{background-color:black !important;}</style>");
             $(".step-5").addClass("step-5-stuck");
             $(".step-name-5").addClass("step-name-5-stuck");

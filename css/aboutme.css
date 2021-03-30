@@ -22,19 +22,19 @@ h2 {
 }
 
 .header a {
-    color: black;
+    color: #333;
 }
 
 .slice, .slice .top, .slice .bottom, .slice .bottom span, .slice .top span, .slice:hover .top, .slice:hover .bottom, .slice:hover, .slice:focus, .slice:active, .slice:before  {
-    color: black;
+    color: #333;
 }
 
 .slice {
-    border: 2px solid black;
+    border: 2px solid #333;
 }
 
 .slice:before {
-    background-color: black;
+    background-color: #333;
 }
 
 .header a:hover {
