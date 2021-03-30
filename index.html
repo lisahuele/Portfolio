@@ -47,7 +47,7 @@
 <div class="aboutMe">
         <h2>Creating a good product experience is like telling a good story.</h2>
         <p>We have to pay attention to the details, but not lose sight of the power of the entire narrative. Great experience design takes into account all of the touch-points one has with a product or service, intertwining a story together so compelling that it demands to be shared and retold. Through the practice of holistic, thoughtful UX design and the execution of beautiful UI elements, together we can create soulful solutions that will tell your story in a new way.</p>
-    <a href="aboutMe.html" class="divButton"><button class="button">More about me</button></a>
+    <a class="link" href="aboutMe.html">More About Me</a>
 </div>
 <div class="profileimg">
     <img src="Images/Lisa.png">
@@ -57,15 +57,43 @@
 
 <!------------------- Work ------------------->
 <section id="work">
-     <h2>Featured Projects</h2>
+    <div class="work-title">
+        <h3>Featured Projects</h3>
+    </div>
 
-<a href="blm.html">
-    <div class="workContainer">
-        <img class="work-img" src="Images/BLM.png" alt="BLM protest">
-        <div class="overlay">
-            <a href="blm.html"><h1>Black Lives Matter - Canada</h1>
-            <p>Case Study - Website Redesign Concept</p></a>
+    <div class="work-container"> <!--Coca Cola-->
+        <div class="content-child">
+            <h6>Coca-Cola Company </h6>
+            <p>A 3-week long research into a website redesign concept.</p>
+            <div class="role-container">
+                <div class="role">User Research</div>
+                <div class="role">UI Design</div>
+                <div class="role">FE Development</div>
+            </div>
+            <a class="link" href="blm.html">View Case Study</a>
         </div>
+    
+        <a href="blm.html">
+            <div class="work-child">
+                <a href="blm.html"><img class="work-img" src="Images/CocaCola.png" alt="Coca Cola Case Study"></a>
+            </div>
+    </div>
+
+    <div class="work-container"> <!--BLM -->
+        <div class="content-child">
+            <h6>Black Lives Matter Canada</h6>
+            <p>A 3-week long research into a website redesign concept.</p>
+            <div class="role-container">
+                <div class="role">User Research</div>
+                <div class="role">UI Design</div>
+            </div>
+            <a class="link" href="blm.html">View Case Study</a>
+        </div>
+    
+        <a href="blm.html">
+            <div class="work-child">
+                <a href="blm.html"><img class="work-img" src="Images/BLM.png" alt="Black Lives Matter Canada Case Study"></a>
+            </div>
     </div>
 </section>
 
@@ -73,13 +101,13 @@
 <footer>
     <div class="footerContainer">
         <div class="contact">
-            <a href="mailto:lisahuele@gmail.com"><h1>lisahuele@gmail.com</h1></a> 
-            <p>Always down to collaborate when I have the time. I'm hoping to further my career by disrupting the social product space. Let's get in touch.</p>
+            <h1><a href="mailto:lisahuele@gmail.com">lisahuele@gmail.com</a></h1>
         </div>
         <div class="social">
-            <a class="linkedIn" href="https://www.linkedin.com/in/lisahuelee/" target="_blank">LinkedIn</a>
-            <p class="copyRight">Copyright © 2021 Lisa Le. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/lisahuelee/" target="_blank"><img src="Images/LinkedIn-Logo.png" alt="LinkedIn"></a>
+            <a href="https://www.linkedin.com/in/lisahuelee/" target="_blank"><img src="Images/GitHub-Logo.png" alt="GitHub"></a>
         </div>
+        <p class="copyRight">Copyright © 2021 Lisa Le. All rights reserved.</p>
     </div>
 </footer>
 
