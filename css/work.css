@@ -387,7 +387,7 @@ color: #333;
     box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width:981px), (max-width:1200px) {
+@media (max-width: 1200px) {
     #hero {padding: 2vh 5% 5vh 5%;}
     .hero-container {flex-direction: column-reverse;}
     .hero-text {width: 100%;}
@@ -427,7 +427,7 @@ color: #333;
 
 .mobileMode {display: none;}
 
-@media (min-width:981px),(max-width: 1200px) {
+@media (max-width: 1200px) {
     .windowMode {display: none;}
     .mobileMode {display: inline-block;}
     .cs-container, .cs-container-2 {padding: 5vh 10% 0 10%;}
@@ -537,7 +537,7 @@ color: #333;
     flex-direction: column;
     text-align: center;
     padding: 3vh;
-    width: calc(200px + 3vw);
+    width: calc(300px + 3vw);
     height: calc(150px +3vh);
     border-radius: 15px;
     -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
