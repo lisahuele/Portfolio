@@ -537,6 +537,7 @@ a:active, a:focus {
 .role-container {
     display: flex;
     margin-bottom: 5vh;
+    flex-wrap: wrap;
 }
 
 .role {
