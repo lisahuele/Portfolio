@@ -681,3 +681,26 @@ color: #333;
 #competitve-analysis .stat-child {
     padding: 4vh;
 }
+
+.research-image {
+    text-align: center;
+}
+
+.research-image img {
+    width: calc(100px + 15vh);
+}
+
+.seo-image img {
+    width: calc(80px + 55vh);
+}
+
+@media (max-width: 1200px) {
+    #seo .flex-row-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .seo-image {
+        margin-top: 10vh;
+    }
+}

@@ -143,3 +143,10 @@ h2 {
         transform: translate(-50%, -50%);
     }
   }
+
+@media (min-height: 1300px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
