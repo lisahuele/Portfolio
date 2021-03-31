@@ -506,6 +506,7 @@ color: #333;
     #overview .flex-row-container {flex-direction: column;}
     .flex-row-container .content-text {margin-top: 3vh;}
     .flex-row-container .content-text, .content-text-2 {width: 100%;}
+    .icon-image img {width:80%}
 }
 
 .highlight-section {
