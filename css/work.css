@@ -547,7 +547,7 @@ color: #333;
 
 @media (max-width: 980px) {
     .stat-child {
-        width: 300px;
+        min-width: 300px;
     }
 }
 
