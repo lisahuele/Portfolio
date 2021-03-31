@@ -387,21 +387,15 @@ color: #333;
     box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width:1200px) {
-    #hero {
-        padding: 2vh 5% 5vh 5%;
-    }
-    .hero-container {
-        flex-direction: column-reverse;
-    }
+@media (min-width:981px), (max-width:1200px) {
+    #hero {padding: 2vh 5% 5vh 5%;}
+    .hero-container {flex-direction: column-reverse;}
+    .hero-text {width: 100%;}
+    .hero-container div:not(:first-child) {margin: 0;}
+}
 
-    .hero-text {
-        width: 100%;
-    }
-
-    .hero-container div:not(:first-child) {
-        margin: 0;
-    }
+@media (max-width: 980px) {
+    #hero {padding: 2vh 2% 5vh 2%;}
 }
 
 /*-------------------- CASE STUDY SET-UP --------------------*/
@@ -433,11 +427,14 @@ color: #333;
 
 .mobileMode {display: none;}
 
-@media (max-width: 1200px) {
+@media (min-width:981px),(max-width: 1200px) {
     .windowMode {display: none;}
     .mobileMode {display: inline-block;}
     .cs-container, .cs-container-2 {padding: 5vh 10% 0 10%;}
 } 
+@media (max-width: 980px) {
+    .cs-container, .cs-container-2 {padding: 5vh 2% 0 2%;}
+}
 
 /*scolling images*/
 .scroll-img {
