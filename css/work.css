@@ -7,6 +7,7 @@ body, html {
 
 p {
     margin: 0 0 2vh 0;
+
 }
 
 .work {
@@ -34,7 +35,7 @@ color: #333;
     animation: ease-in-out 0.3s;
     visibility: hidden;
     z-index: -999999;
-    margin-top: -10vh;
+    margin-top: -5vh;
 }
 
 .containerFluid {
@@ -386,9 +387,9 @@ color: #333;
     box-shadow: 0 0 9px 0px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width:980px) {
+@media (max-width:1200px) {
     #hero {
-        padding: 2vh 5% 5vh 5%;
+        padding: 2vh 15% 5vh 15%;
     }
     .hero-container {
         flex-direction: column-reverse;
@@ -412,6 +413,7 @@ color: #333;
     padding-left: 50px;
     position: relative;
     font-size: 0.8em;
+    font-weight: 500;
     color: #5A5A5A;
 }
 
@@ -426,17 +428,18 @@ color: #333;
 }
 
 .cs-child {
-    margin-top: 15vh;
+    margin-top: 10vh;
 }
 
 .mobileMode {display: none;}
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
     .windowMode {display: none;}
     .mobileMode {display: inline-block;}
-    .cs-container, .cs-container-2 {padding: 5vh 10% 0 10%;}
+    .cs-container, .cs-container-2 {padding: 5vh 20% 0 20%;}
 } 
 
+/*scolling images*/
 .scroll-img {
     overflow-x: scroll;
     height: calc(200px + 15vh);
@@ -471,7 +474,6 @@ color: #333;
     margin-right: 5vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .content-text h3 {
@@ -489,8 +491,13 @@ color: #333;
 
 .content-image, .content-image a {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.content-image div:first-child {
+    margin-bottom: 3vh;
 }
 
 .content-image a {
@@ -499,9 +506,11 @@ color: #333;
 
 .icon-image img {
     width: 100%;
+    max-width: 400px;
+    min-width: 50%;
 }
 
-@media (max-width:980px) {
+@media (max-width:1200px) {
     .flex-row-container {flex-direction: column-reverse;}
     #overview .flex-row-container {flex-direction: column;}
     .flex-row-container .content-text {margin-top: 3vh;}
@@ -512,6 +521,7 @@ color: #333;
 .highlight-section {
     background-color: #F0EEE9;
     margin-top: 10vh;
+    padding: 5vh 0 5vh 0;
 }
 
 /*-------- stats -------*/
@@ -529,8 +539,9 @@ color: #333;
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2vh;
-    width: 18%;
+    padding: 3vh;
+    width: calc(200px + 3vw);
+    height: calc(150px +3vh);
     border-radius: 15px;
     -webkit-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.1);
@@ -554,6 +565,10 @@ color: #333;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.stat-child-text p {
+    line-height: 2.5vh;
 }
 
 @media (max-width: 980px) {
@@ -593,7 +608,19 @@ color: #333;
         flex-direction: column;
 }
 
+.image-icon {
+    text-align: center;   
+}
+
+.image-icon p {
+    margin-top: 2vh;
+}
+
 /*------------------------ FINAL UI ------------------------*/
+#final a {
+    display: inline-block;
+}
+
 .final-container {
     display: flex;
     margin-top: 10vh;
@@ -632,4 +659,22 @@ color: #333;
     .final-text, .final-image {width: 100%;}
     .final-text {margin-bottom: 5vh;}
     #final {padding-bottom: 5vh;}
+}
+
+/* ------------ lists ---------------*/
+.cs-list-title {
+    margin-top: 3vh;
+}
+.cs-list:before {
+    content: "\2022";
+    margin-right: 15px;
+}
+
+.cs-list {
+    margin: 0;
+}
+
+/* -------- COCA COLA -------- */
+#competitve-analysis .stat-child {
+    padding: 4vh;
 }

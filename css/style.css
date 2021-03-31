@@ -59,8 +59,8 @@ h6 {
 }
 
 p {
-    line-height: 3.5vh;
-    font-weight: 500;
+    line-height: calc(20px + 1.5vh);
+    font-weight: 300;
 }
 
 .bold {
@@ -466,7 +466,7 @@ a:active, a:focus {
     height: calc(100% + 8px);
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1200px) {
     #profile {
        margin: 10vh 10% 10vh 10%;
        flex-direction: column-reverse;
@@ -474,17 +474,14 @@ a:active, a:focus {
        align-items: center;
        text-align: center;
     }
-
     #profile img {
         height: 50%;
         width: 50%;
     }
-
     .aboutMe {
         align-items: center;
         width: 100%;
     }
-    
 }
 
 /*-------------------------- MY WORK --------------------------*/
