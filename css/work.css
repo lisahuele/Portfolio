@@ -389,7 +389,7 @@ color: #333;
 
 @media (max-width:1200px) {
     #hero {
-        padding: 2vh 15% 5vh 15%;
+        padding: 2vh 5% 5vh 5%;
     }
     .hero-container {
         flex-direction: column-reverse;
@@ -436,7 +436,7 @@ color: #333;
 @media (max-width: 1200px) {
     .windowMode {display: none;}
     .mobileMode {display: inline-block;}
-    .cs-container, .cs-container-2 {padding: 5vh 20% 0 20%;}
+    .cs-container, .cs-container-2 {padding: 5vh 10% 0 10%;}
 } 
 
 /*scolling images*/
