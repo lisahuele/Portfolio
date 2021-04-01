@@ -144,9 +144,9 @@ h2 {
     }
   }
 
-@media (min-height: 1300px) {
+@media (min-height: 1400px) {
     footer {
-        margin-top: 15vh;
+        margin-top: 25vh;
         margin-bottom: 0;
     }
 }
