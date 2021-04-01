@@ -404,7 +404,7 @@ color: #333;
 .cs-container-2 {padding: 5vh 20% 5vh 20%} /*padding for sections*/
 
 .title-container p {
-    padding-left: 50px;
+    padding-left: 2.5vw;
     position: relative;
     font-size: 0.8em;
     font-weight: 500;
@@ -413,12 +413,13 @@ color: #333;
 
 .title-container p:before {
     content: "";
-    width: 4vh;
+    width: 2vw;
     height: 2px;
     position: absolute;
     background-color: #5A5A5A;
     left: 0;
     top: 50%;
+    
 }
 
 .cs-child {
@@ -703,4 +704,13 @@ color: #333;
     .seo-image {
         margin-top: 10vh;
     }
+}
+
+/* ---------- INFORMATION ARCHITECTURE ---------- */
+.ia-img img {
+    width: calc(300px + 8vw);
+}
+
+.ia-img {
+    margin-left: 5vh;
 }

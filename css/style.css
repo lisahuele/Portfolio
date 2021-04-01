@@ -523,6 +523,11 @@ a:active, a:focus {
     flex-direction: row;
 }
 
+.content-child p {
+    color: #6F6F6F;
+    font-size: 0.8em;
+}
+
 .content-child {
     margin-right: 5vh;
     width: 80%;
