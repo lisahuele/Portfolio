@@ -85,7 +85,7 @@ h2 {
 }
 
 .sub {
-    color: #939597;
+    color: #6F6F6F;
     font-weight: 500;
 }
 
@@ -116,9 +116,6 @@ h2 {
     }
     .contentRight img {
         margin-bottom: 20px;
-    }
-    footer {
-        margin-top: 0;
     }
 }
 
