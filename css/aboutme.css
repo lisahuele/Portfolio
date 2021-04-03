@@ -5,6 +5,11 @@ body, html {
     scroll-behavior: smooth;
 }
 
+body {
+    height: 100vh;
+    position: relative;
+}
+
 p {
     line-height: 1.8em;
     font-size: 0.9em;
@@ -106,7 +111,7 @@ h2 {
     margin-top: 2vh;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     .contentLeft {
         margin-bottom: 20px;
     }
@@ -141,11 +146,8 @@ h2 {
     }
   }
 
-
-
-@media (min-height: 1200px) {
-    footer {
-        margin-top: 30vh;
-        bottom: 0;
-    }
+footer {
+    position: relative;
+    bottom: 0;
 }
+
