@@ -146,8 +146,9 @@ h2 {
     }
   }
 
-footer {
-    position: relative;
-    bottom: 0;
+ @media (min-height: 1400px) { 
+    footer {
+        position: absolute;
+        bottom: 0; }
 }
 
