@@ -63,14 +63,65 @@ h2 {
 
 .contentLeft {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     margin-right: 5vh;
 }
 
-.contentLeft img {
-    max-width: 430px;
-    min-width: 430px;
+.contentLeft h3 {
+    margin: 5vh 0 0 0;
+}
+
+.profileimg {
+    max-width: 350px;
+    min-width: 300px;
+}
+
+.creatives-container div:not(:first-child) {
+    margin-left: 1vw;
+}
+
+.creatives {
+    max-width: 75px;
+}
+
+.infobox {
+    position: relative;
+    display: inline-block;
+}
+
+.infobox .infobox-text {
+    visibility: hidden;
+    width: 13vh;
+    background-color: #6F6F6F;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.infobox .infobox-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.infobox:hover .infobox-text {
+    visibility: visible;
 }
 
 .contentRight {
