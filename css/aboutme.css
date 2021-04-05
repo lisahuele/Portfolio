@@ -106,7 +106,7 @@ h2 {
     z-index: 1;
     top: 110%;
     left: 50%;
-    margin-left: -60px;
+    margin-left: -70px;
 }
 
 .infobox .infobox-text::after {
@@ -114,10 +114,9 @@ h2 {
     position: absolute;
     bottom: 100%;
     left: 50%;
-    margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent black transparent;
+    border-color: transparent transparent #6F6F6F transparent;
 }
 
 .infobox:hover .infobox-text {
