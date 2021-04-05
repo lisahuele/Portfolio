@@ -46,16 +46,16 @@ h2 {
     color: #939597;
 }
 /*--------------- CONTENT ---------------*/
-.about-grid {
+.about {
     display: flex;
     flex-direction: row;
-    padding: 5vh 20% 0vh 20%;
+    padding: 5vh 15% 0vh 15%;
     width: 100%;
 
 }
 
-@media (max-width: 1400px) {
-    .about-grid {
+@media (max-width: 1500px) {
+    .about {
         padding: 5vh 15% 5vh 15%;
         flex-direction: column;
     }
@@ -65,6 +65,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 5vh;
 }
 
 .contentLeft img {
