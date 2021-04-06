@@ -164,7 +164,7 @@ h2 {
 
 @media (max-width: 1500px) {
     .contentLeft {
-        margin-bottom: 20px;
+        margin-bottom: 5vh;
     }
     .contentRight {
         margin-left: 0;
