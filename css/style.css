@@ -69,7 +69,7 @@ p {
 /*----------Hero Section-------------*/
 .heroImage {
     background-image: url("../Images/Hero.png");
-    height: calc(300px + 35vw);
+    height: calc(300px + 40vw);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
