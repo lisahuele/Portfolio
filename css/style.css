@@ -69,7 +69,7 @@ p {
 /*----------Hero Section-------------*/
 .heroImage {
     background-image: url("../Images/Hero.png");
-    height: calc(300px + 40vw);
+    height: calc(300px + 35vw);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,7 +89,7 @@ p {
     font-family: 'Playfair Display', serif;
     font-weight: normal;
     font-size: calc(15px + 0.3vw);
-    color: #BCBCBC;
+    color: #EBECF0;
     text-transform: uppercase;
     white-space: nowrap;
 }
@@ -432,6 +432,12 @@ a:active, a:focus {
     margin-bottom: 0;
 }
 
+.aboutMe-child {
+    display: flex;
+    gap: 50px;
+    
+}
+
 .link {
     cursor: pointer;
     color: #333;
@@ -488,7 +494,7 @@ a:active, a:focus {
 #work {
     display: flex;
     flex-direction: column;
-    margin: 0 20% 0 20%;
+    margin: 5vh 20% 0 20%;
 }
 
 .work-title:not(:last-child) {
