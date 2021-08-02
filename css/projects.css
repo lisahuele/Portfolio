@@ -1,5 +1,7 @@
 .heroImage {
     height: calc(200px + 15vw);
+    background-color: #0a0a0a;
+    background-image: none;
 }
 
 .heroImage h1 {
