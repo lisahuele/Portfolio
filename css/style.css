@@ -86,11 +86,11 @@ p {
 }
 .heroText div {
     margin: 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', sans-serif;
     font-weight: normal;
     font-size: calc(15px + 0.3vw);
-    color: #EBECF0;
-    text-transform: uppercase;
+    color: #BCBCBC;
+    text-transform: none;
     white-space: nowrap;
 }
 .heroText h1 {
