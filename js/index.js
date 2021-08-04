@@ -1,6 +1,6 @@
 $(function(){
   $(document).scroll(function(){
-       if($(this).scrollTop() > 50) {
+       if($(this).scrollTop() > 150) {
             $(".header").addClass("header-stuck");
             $(".slice").addClass("slice-stuck");
             $(".top").addClass("top-stuck");
@@ -13,7 +13,7 @@ $(function(){
             $(".bottom").removeClass("bottom-stuck"); 
         }
     });
-  });
+});
 
 
 $('.scrollHit').click(function(event){
