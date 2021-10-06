@@ -118,7 +118,7 @@ p {
     letter-spacing: 0.15em;
 }
 
-  ul { 
+ul { 
     float: right;
     padding-top: 5px;
     padding-right: 10%; 
@@ -128,7 +128,7 @@ p {
     text-align: center;
   }
 
-  li { 
+li { 
     display: table-cell; 
     position: relative; 
     padding: 0.75em 1em;
